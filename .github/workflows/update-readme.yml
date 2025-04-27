@@ -1,0 +1,25 @@
+name: Update README
+
+on:
+  schedule:
+    - cron: '0 16 * * *'  # Runs at 00:00 UTC every day
+  workflow_dispatch:  # Allows manual trigger
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Update README
+        run: |
+          utc_time=$(date -u "+%Y-%m-%d %H:%M:%S")
+          pst_time=$(TZ=America/Los_Angeles date -d "$utc_time UTC" "+%Y-%m-%d %H:%M:%S %Z")
+          sed -i "s/updated_at = \".*\"/updated_at = \"$pst_time\"/" README.md
+          
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update timestamp" && git push)
