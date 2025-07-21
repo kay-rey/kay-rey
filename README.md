@@ -10,7 +10,7 @@ class SoftwareEngineer:
 
 ## 🔨 Skills & Tools
 
-- Python, Git, GitHub
+- Python, Django, Git, GitHub
 - Object-Oriented Design
 - Test-Driven Development
 - Clean Code Practices
@@ -29,6 +29,7 @@ class SoftwareEngineer:
 - Advanced Design Patterns
 - CI/CD Pipelines
 - RESTful APIs
+- React
 
 ## 📫 Connect
 
