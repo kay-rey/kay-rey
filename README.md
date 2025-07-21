@@ -36,6 +36,15 @@ class SoftwareEngineer:
 - GitHub: [@kay-rey](https://github.com/kay-rey)
 - LinkedIn: [Kevin Reyes](https://www.linkedin.com/in/kevbreyes)
 
+## 🎓 Education
+
+- B.S. in Computer Engineering, San Francisco State University
+
+## 🥋 Fun Facts
+
+- Jiujitsu athlete and coach with over 5 years of training
+- My martial arts journey also includes experience in Judo and Muay Thai.
+
 <div align="left">
 
 ```bash
