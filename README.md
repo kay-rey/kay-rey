@@ -17,7 +17,7 @@ class SoftwareEngineer:
     def __init__(self):
         self.name = "Kay Rey"
         self.languages = ["Python", "TypeScript", "JavaScript"]
-        self.interests = ["Clean Architecture", "Software Design", "Test-Driven Development", "Full-Stack Development"]
+        self.interests = ["Clean Architecture", "Test-Driven Development", "Full-Stack Development"]
         self.seeking = "Software Development Opportunities"
 
     def about(self):
